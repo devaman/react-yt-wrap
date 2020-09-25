@@ -1,26 +1,38 @@
-# react-simplified-modal
+# react-yt-wrap
 
-[![npm](https://img.shields.io/npm/v/react-simplified-modal.svg)](https://www.npmjs.com/package/react-simplified-modal)
-![npm](https://img.shields.io/npm/dw/react-simplified-modal.svg)
-![GitHub issues](https://img.shields.io/github/issues/devaman/react-simplified-modal.svg)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/devaman/react-simplified-modal.svg)
-[![HitCount](http://hits.dwyl.io/devaman/react-simplified-modal.svg)](http://hits.dwyl.io/devaman/react-simplified-modal)
+[![npm](https://img.shields.io/npm/v/react-yt-wrap.svg)](https://www.npmjs.com/package/react-yt-wrap)
+![npm](https://img.shields.io/npm/dw/react-yt-wrap.svg)
+![GitHub issues](https://img.shields.io/github/issues/devaman/react-yt-wrap.svg)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/devaman/react-yt-wrap.svg)
+[![HitCount](http://hits.dwyl.io/devaman/react-yt-wrap.svg)](http://hits.dwyl.io/devaman/react-yt-wrap)
 
 ## Import the modal.
 
 ```js
-import Modal from 'react-simplified-modal';
+import YtWrap from 'react-yt-wrap';
 ```
 ## Usage
 
 ```js
- <Modal open={this.state.open} onCloseClicked={this.toggleState} onBackDropClicked={this.toggleState}><h1>Hellox</h1></Modal>
+ <YtWrap 
+    id="O9S3tFECUOU" 
+    style={{ width: "500px" }}
+    video={{
+            autoplay: 1,
+            start: this.state.start
+        }}
+    />
  ```
 
  ## Props
 
- open : _boolean_
+ id : https://www.youtube.com/watch?v=SKh1MJromYk 
+  means => __SKh1MJromYk__
 
- onCloseClicked : _callback function called on cross clicked_
- 
- onBackDropClicked : _callback function called on backdrop clicked_
+ video : JSON object which contains all the props for the iframe . [See this](https://developers.google.com/youtube/player_parameters)
+
+# Only for single video
+
+# ChangeLog
+
+- Picture in Picture mode added

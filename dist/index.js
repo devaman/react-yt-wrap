@@ -1,2 +1,2 @@
-import Modal from "./components/Modal";
-export default Modal;
+import reactYtWrap from "./components/reactYtWrap";
+export default reactYtWrap;
