@@ -14,15 +14,13 @@ import YtWrap from 'react-yt-wrap';
 ## Usage
 
 ```js
- <YtWrap 
-    id="O9S3tFECUOU" 
-    style={{ width: "500px" }}
-    video={{
-            autoplay: 1,
-            start: this.state.start
-        }}
-    />
+ <ReactYtWrap ref={child} id="GoTjn6hD_io" style={{ padding: "0 10%" }}
+          video={{ autoplay: false, startSeconds: start }}
+          onReadyState={onReady}
+        />
  ```
+ See the example in src/index.js.
+ To run demo npm start.
 
  ## Props
 

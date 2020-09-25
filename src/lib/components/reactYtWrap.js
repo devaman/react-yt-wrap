@@ -59,7 +59,6 @@ class YtWrap extends Component {
   onPlayerReady = event => {
     event.target.loadVideoById({
       'videoId': this.props.id,
-      'autoplay': 1,
       ...this.props.video
     });
     this.props.onReadyState();

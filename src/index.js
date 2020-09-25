@@ -4,7 +4,7 @@ import ReactYtWrap from "./lib";
 
 function App() {
   const child = useRef();
-  const [start, setStart] = useState(10);
+  const [start, setStart] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
   const [ready, setReady] = useState(false);
   const [state, setState] = useState("false");
@@ -21,9 +21,9 @@ function App() {
   //   }
   // })
   const onSetCurrentTime = () => {
-    child.current.seekTo(start + 10);
+    child.current.seekTo(currentTime + 10);
     setStart(
-      start + 10
+      currentTime + 10
     )
   }
   const getDuration = () => {
@@ -37,7 +37,7 @@ function App() {
     return (
       <div style={{ display: "flex", flexFlow: "column", justifyContent: "center", alignItems: "center", height: "200vh" }}>
         <h1 style={{ fontFamily: "monospace", color: "brown" }}>React-YT-Wrap NPM Package</h1>
-        <ReactYtWrap ref={child} id="fe3tDcbj9z8" style={{ padding: "0 10%" }}
+        <ReactYtWrap ref={child} id="GoTjn6hD_io" style={{ padding: "0 10%" }}
           video={{ autoplay: false, startSeconds: start }}
           onReadyState={onReady}
         />
